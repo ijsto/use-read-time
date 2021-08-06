@@ -28,10 +28,9 @@ export const useReadTime = ({ text, speed, wpm: externalWpm }) => {
   const normalReadingSpeedWpm = 180
   const slowReadingSpeedWpm = 100
 
-  const defaultReadingSpeedWpm = 180
+  const defaultReadingSpeedWpm = externalWpm || normalReadingSpeedWpm
 
-  const wpm =
-    externalWpm || speed === 'fast'
+  const wpm = speed === 'fast'
       ? fastReadingSpeedWpm
       : speed === 'normal'
         ? normalReadingSpeedWpm
@@ -63,7 +62,9 @@ export const useReadTime = ({ text, speed, wpm: externalWpm }) => {
   } read`
   const readTimeInfo = isFewWords
     ? 'Less than a minute.'
-    : `Around ${estimatedReadTime} minutes.`
+    : `Around ${estimatedReadTime} minute${
+      estimatedReadTime === 1 ? '' : 's'
+    }.`
 
   return { readTime: estimatedReadTime, readTimeInfo, readTimeLabel }
 }
