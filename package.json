@@ -1,6 +1,6 @@
 {
   "name": "use-read-time",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Hook to estimate read time for a provided text.",
   "author": {
     "username": "ScottAgirs",
@@ -71,5 +71,16 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.1.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "react-hook",
+    "custom-hook",
+    "readtime",
+    "read-time",
+    "react-readtime",
+    "react-read-time",
+    "use-readtime",
+    "use-read-time"
+  ]
 }
