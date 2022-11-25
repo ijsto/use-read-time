@@ -64,12 +64,12 @@ const ExampleReadTimeInfo = () => {
 
 ## License
 
-MIT © [@ScottAgirs](https://ijs.to/u/scottagirs)
+MIT © [@ScottAgirs](https://ijs.to/scottagirs)
 
 ---
 
 #### **Credits**
 
-Package by [@ScottAgirs](https://ijs.to/u/scottagirs).
+Package by [@ScottAgirs](https://ijs.to/scottagirs).
 
 This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
